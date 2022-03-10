@@ -8,7 +8,4 @@ add_subdirectory(ext/jsoncpp)
 
 add_executable(main src/main.cpp)
 
-include_directories(include)
-link_directories(lib)
-
-target_link_libraries(main jsoncpp gtest)
+target_link_libraries(main jsoncpp gtest pthread)
